@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {
+            height: 50px;
+            width: 100%;
+        }
+
+        .top h1 {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .reading {
+            width: 100%;
+            /* height: 2000px; */
+            margin-top: 40px;
+            /* background-color: blue; */
+        }
+
+        .reading h1 {
+            font-size: 15px;
+            font-weight: 100;
+            border: 2px solid black;
+            width: 4.5%;
+            height: 20px;
+            text-align: center;
+        }
+
+        .reading h2 {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .text {
+            width: 100%;
+        }
+
+        .tr1,
+        .tr2,
+        .tr3 {
+            width: 100%;
+            /* background-color: aqua; */
+            margin: 0;
+        }
+
+        .tr1 h4 {
+            width: 100%;
+            border: none;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+        }
+
+        .tr2 h2 {
+            width: 100%;
+            border: none;
+            font-size: 20px;
+            font-weight: 100;
+            /* margin-top: 220px; */
+        }
+
+        .tr3 h3 {
+            width: 100%;
+            border: none;
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+            /* margin-top: 220px; */
+        }
+
+        .A11 {
+            border: 1px solid black;
+            width: 25px;
+            height: 25px;
+            font-size: 15px;
+        }
+
+        .answerReading {
+            width: 100%;
+        }
+
+        .r1 {
+            width: 50%;
+            /* background-color: purple; */
+        }
+
+        .r1 h1 {
+            width: 90%;
+            border: none;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .answerReading h1 {
+            font-size: 15px;
+            font-weight: 300;
+
+        }
+
+        .r2 {
+            width: 50%;
+            /* background-color: burlywood; */
+            /* height: 750px; */
+        }
+
+        .r2 h1 {
+            width: 90%;
+            border: none;
+            font-weight: 400;
+            text-align: left;
+            /* margin-left: -5%; */
+        }
+
+        #quizForm {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .quiz-block {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .question {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>Longman Preparation course mini test 1</h1>
+    </div>
+    <div class="reading" id="reading">
+
+        <h1>20 minutes</h1>
+        <h2>Migration</h2>
+        <!-- </div> -->
+        <div class="text">
+
+            <div class="tr1">
+                <h4>1<br><br><br> A widely 𝗵𝗲𝗹𝗱 theory today is that the ancestors of today's Native American
+                    peoples
+                    traveled to the Western Hemisphere from Asia
+                    between 25,000 and 30,000 years ago, which was around the same time that Japan was being settled by
+                    Stone Age inhabitants.
+                    There is dental evidence and blood-type evidence to 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 this theory. A dental pattern
+                    that is
+                    found among most ancient human fossils in the Americas
+                    is consistent with the dental pattern of ancient human fossils in northeastern Asia. In blood type,
+                    the
+                    fact that blood type B is almost nonexistent
+                    among Native American populations but exists in Asian populations leads to the conclusion that
+                    migrations to the Americas from Asia took place before
+                    the evolution of blood type B, which is believed to have occurred around 30,000 years ago. In
+                    addition
+                    to the dental and blood-type evidence,
+                    more general evolutionary evidence suggests that it took more than 20,000 years for the variety of
+                    physical traits common to Native American
+                    populations to evolve, and linguists 𝐛𝐫𝐨𝐚𝐝𝐥𝐲 𝐜𝐨𝐧𝐜𝐮𝐫 that the development of the
+                    approximately 500 distinct languages of the Native Americans would
+                    require approximately 25,000 years.</h4>
+            </div>
+            <div class="tr2">
+                <h2>2 <br><br> The proposed migration from Asia to the Americas took place during the Ice Age that
+                    characterized the Pleistocene epoch.
+                    𝘿𝙪𝙧𝙞𝙣𝙜 𝙩𝙝𝙖𝙩 𝙥𝙚𝙧𝙞𝙤𝙙 𝙤𝙛 𝙩𝙞𝙢𝙚, 𝙩𝙝𝙚𝙧𝙚 𝙬𝙚𝙧𝙚 𝙝𝙪𝙜𝙚 𝙜𝙡𝙖𝙘𝙞𝙚𝙧𝙨
+                    𝙝𝙤𝙡𝙙𝙞𝙣𝙜 𝙚𝙣𝙤𝙧𝙢𝙤𝙪𝙨 𝙫𝙤𝙡𝙪𝙢𝙚𝙨 𝙤𝙛 𝙬𝙖𝙩𝙚𝙧, 𝙖𝙣𝙙, 𝙗𝙚𝙘𝙖𝙪𝙨𝙚 𝙤𝙛 𝙩𝙝𝙚
+                    𝙝𝙪𝙜𝙚 𝙜𝙡𝙖𝙘𝙞𝙚𝙧𝙨, 𝙨𝙚𝙖 𝙡𝙚𝙫𝙚𝙡𝙨 𝙬𝙚𝙧𝙚 𝙖𝙨 𝙢𝙪𝙘𝙝 𝙖𝙨 100 𝙢𝙚𝙩𝙚𝙧𝙨
+                    𝙡𝙤𝙬𝙚𝙧
+                    𝙩𝙝𝙖𝙣 𝙩𝙝𝙚𝙮 𝙖𝙧𝙚 𝙩𝙤𝙙𝙖𝙮. The reduced sea levels meant that Asia and North America were
+                    linked with a 750-mile-wide landmas
+                    s, named Beringia after the Bering Straits that now cover it, and consisted of treeless grassland
+                    with
+                    warm summers and cold dry winters. Beca
+                    use of the geographical features of Beringia during the Pleistocene epoch, it was an environment
+                    𝐰𝐞𝐥𝐥-𝐬𝐮𝐢𝐭𝐞𝐝 to the large mammals of the time, s
+                    uch as mammoth, mastodon, bison, horse, and reindeer, as well as to the Stone Age hunters who
+                    depended
+                    on these animals for their existence. The
+                    Stone Age inhabitants of the area used these animals not only for food but also for shelter,
+                    clothing,
+                    and weapons: 𝐭𝐡𝐞𝐲 were able to spread ou
+                    t and expand their hunting areas as their populations grew, and their populations most likely grew
+                    at a
+                    very high rate because of the huge amou
+                    nt of territory available for expansion.</h2>
+            </div>
+            <div class="tr3">
+                <h3>3 <br><br>[𝟭𝟭𝗔] 𝐈𝐧 𝐬𝐩𝐢𝐭𝐞 𝐨𝐟 the evidence, not all anthropologists are convinced that the
+                    migrations from Asia to the Americas took place as early as
+                    25,000 to 30,000 years ago. [𝟏𝟏𝐁]There is general agreement that the migrations took place, but
+                    some
+                    believe that the migrations took place much late
+                    r. [𝟏𝟏𝐂]No fossilized human bones have been found in what used to be Beringia: finding human
+                    bones
+                    dating from 25,000 to 30,000 years ago would be s
+                    trong proof of the dates when the migrations took place. However, because what was once Beringia is
+                    submerged beneath ocean waters, it may be a
+                    𝐟𝐨𝐫𝐦𝐢𝐝𝐚𝐛𝐥𝐞 task to uncover fossil evidence of migration from Asia to the Americas through
+                    Beringia.[𝟏𝟏𝐃]</h3>
+            </div>
+        </div>
+
+
+        <div class="answerReading">
+            <form id="quizForm">
+                <div class="quiz-block">
+                    <div class="r1">
+                        <div class="question">
+                            <div class="q1">
+                                <h3>1. The word "held" in paragraph 1 could best be replaced by:</h3>
+                                <div class="a"><label><input type="radio" name="q1" value="accepted"> A) accepted</label></div>
+                                <div class="b"><label><input type="radio" name="q1" value="possessed"> B) possessed</label></div>
+                                <div class="c"><label><input type="radio" name="q1" value="contained"> C) contained</label></div>
+                                <div class="d"><label><input type="radio" name="q1" value="carried"> D) carried</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q2">
+                                <h3>2. The word "support" in paragraph 1 could best be replaced by:</h3>
+                                <div class="a"><label><input type="radio" name="q2" value="hold"> A) hold</label></div>
+                                <div class="b"><label><input type="radio" name="q2" value="finance"> B) finance</label></div>
+                                <div class="c"><label><input type="radio" name="q2" value="confirm"> C) confirm</label></div>
+                                <div class="d"><label><input type="radio" name="q2" value="stiffen"> D) stiffen</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q3">
+                                <h3>3. Which of the following is NOT provided as evidence to support the hypothesis?
+                                </h3>
+                                <div class="a"><label><input type="radio" name="q3" value="Dental patterns"> A) Dental patterns common
+                                    to
+                                    Asians and Native Americans</label></div>
+                                <div class="b"><label><input type="radio" name="q3" value="Blood types"> B) Variations in blood types
+                                    between Asians and Native Americans</label></div>
+                                <div class="c"><label><input type="radio" name="q3" value="Languages"> C) The number of Native American
+                                    languages in existence today</label></div>
+                                <div class="d"><label><input type="radio" name="q3" value="Bones"> D) The human bones found in
+                                    Beringia</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q4">
+                                <h3>4. The phrase "broadly concur" in paragraph 1 is closest in meaning to:</h3>
+                                <div class="a"><label><input type="radio" name="q4" value="Contrary idea"> A) have a contrary
+                                    idea</label></div>
+                                <div class="b"><label><input type="radio" name="q4" value="Debates"> B) have extensive debates</label></div>
+                                <div class="c"><label><input type="radio" name="q4" value="Question"> C) openly question</label></div>
+                                <div class="d"><label><input type="radio" name="q4" value="Agreement"> D) are in general
+                                    agreement</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q5">
+                                <h3>5. Which of the sentences below expresses the essential information in the
+                                    highlighted
+                                    sentence in paragraph 2?</h3>
+                                <div class="a"><label><input type="radio" name="q5" value="Decreased water"> A) Since the Ice Age, the
+                                    amount of water in the oceans has decreased dramatically.</label></div>
+                                <div class="b"><label><input type="radio" name="q5" value="Low sea levels"> B) During the Ice Age, sea
+                                    levels were low because of how much water was frozen.</label></div>
+                                <div class="c"><label><input type="radio" name="q5" value="Glaciers grown"> C) Glaciers have grown
+                                    tremendously since the last Ice Age.</label></div>
+                                <div class="d"><input type="radio" name="q5" value="Displaced water"> D) During the Ice Age,
+                                    huge
+                                    glaciers displaced a lot of water, causing the oceans to rise.</label></div><label>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q6">
+                                <h3>6. It is stated in the passage that Beringia:</h3>
+                                <div class="a"><label><input type="radio" name="q6" value="Bering Straits"> A) was the source of the
+                                    name
+                                    Bering Straits</label></div>
+                                <div class="b"><label><input type="radio" name="q6" value="Covered with trees"> B) used to be covered
+                                    with
+                                    trees</label></div>
+                                <div class="c"><label><input type="radio" name="q6" value="Submerged"> C) is now submerged</label></div>
+                                <div class="d"><label><input type="radio" name="q6" value="No animal support"> D) was unable to support
+                                    animal life</label></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="r2">
+
+                        <div class="question">
+                            <div class="q7">
+                                <h3>7. The phrase "well-suited" in paragraph 2 is closest in meaning to:</h3>
+                                <div class="a"><label><input type="radio" name="q7" value="Equal to"> A) equal to</label></div>
+                                <div class="b"><label><input type="radio" name="q7" value="Appropriate for"> B) appropriate for</label></div>
+                                <div class="c"><label><input type="radio" name="q7" value="Flattering to"> C) flattering to</label></div>
+                                <div class="d"><label><input type="radio" name="q7" value="Modified for"> D) modified for</label></div>
+                            </div>
+                        </div>
+
+
+                        <div class="question">
+                            <div class="q8">
+                                <h3>8. The word "they" in paragraph 2 refers to:</h3>
+                                <div class="a"><label><input type="radio" name="q8" value="Stone Age inhabitants"> A) Stone Age
+                                    inhabitants</label></div>
+                                <div class="b"><label><input type="radio" name="q8" value="Animals"> B) animals</label></div>
+                                <div class="c"><label><input type="radio" name="q8" value="Weapons"> C) weapons</label></div>
+                                <div class="d"><label><input type="radio" name="q8" value="Hunting areas"> D) their hunting
+                                    areas</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q9">
+                                <h3>9. It is implied in the passage that the Stone Age inhabitants of Beringia were most
+                                    likely:</h3>
+                                <div class="a"><label><input type="radio" name="q9" value="Agriculture"> A) dependent on
+                                    agriculture</label></div>
+                                <div class="b"><label><input type="radio" name="q9" value="Poor hunters"> B) poor hunters</label></div>
+                                <div class="c"><label><input type="radio" name="q9" value="Raising livestock"> C) involved in raising
+                                    livestock</label></div>
+                                <div class="d"><label><input type="radio" name="q9" value="Mobile"> D) mobile</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q10">
+                                <h3>10. The author begins paragraph 3 with the expression "In spite of" to show that the
+                                    fact that some anthropologists were not convinced by the evidence was:</h3>
+                                <div class="a"><label><input type="radio" name="q10" value="Unexpected"> A) unexpected</label></div>
+                                <div class="b"><label><input type="radio" name="q10" value="Natural conclusion"> B) a natural
+                                    conclusion</label></div>
+                                <div class="c"><label><input type="radio" name="q10" value="Unsurprising"> C) unsurprising</label></div>
+                                <div class="d"><label><input type="radio" name="q10" value="Logical"> D) logical</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q11">
+                                <h3>11. Look at four squares that indicate where the following sentence can be added to
+                                    paragraph 3:</h3>
+                                <p>Some, in fact, hypothesize that the migrations took place around 15,000 B.C</p>
+                                <div class="a"><label><input type="radio" name="q11" value="A"> A) [11A]</label></div>
+                                <div class="b"><label><input type="radio" name="q11" value="B"> B) [11B]</label></div>
+                                <div class="c"><label><input type="radio" name="q11" value="C"> C) [11C]</label></div>
+                                <div class="d"><label><input type="radio" name="q11" value="D"> D) [11D]</label></div>
+                            </div>
+
+                        </div>
+
+                        <div class="question">
+                            <div class="q12">
+                                <h3>12. The word "formidable" in paragraph 3 is closest in meaning to:</h3>
+                                <div class="a"><label><input type="radio" name="q12" value="Superior"> A) superior</label></div>
+                                <div class="b"><label><input type="radio" name="q12" value="Maddening"> B) maddening</label></div>
+                                <div class="c"><label><input type="radio" name="q12" value="Powerful"> C) powerful</label></div>
+                                <div class="d"><label><input type="radio" name="q12" value="Difficult"> D) difficult</label></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button type="button" onclick="checkAnswers()">Finish the test</button>
+            </form>
+        </div>
+    </div>
+    <p id="result"></p>
+
+    <!-- <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "accepted",
+                q2: "confirm",
+                q3: "Bones",
+                q4: "Agreement",
+                q5: "Low sea levels",
+                q6: "Submerged",
+                q7: "Appropriate for",
+                q8: "Stone Age inhabitants",
+                q9: "Mobile",
+                q10: "Unexpected",
+                q11: "C",
+                q12: "Difficult"
+            };;
+            let correctCount = 0;
+
+            for (const question in correctAnswers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === correctAnswers[question]) {
+                    correctCount++;
+                }
+            }
+            const reading = document.getElementById("reading")
+            // document.getElementById("result").innerText = `You got ${correctCount} out of 12 correct answers!`;
+            reading.style.display = "none"
+            document.getElementById("result").innerText = `You got ${correctCount} out of 12 correct answers!`;
+            const result = document.getElementById("result")
+            result.style.display = "block"
+            result.style.textAlign = "center"
+            result.style.fontSize = "30px"
+            result.style.marginTop = "150px"
+            result.style.fontWeight = "600"
+        }
+    </script> -->
+</body>
+<script src="./LongmanMiniTest1.js"></script>
+
+</html>
